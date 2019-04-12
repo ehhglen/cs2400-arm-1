@@ -8,9 +8,9 @@
 		;		Your code here
 		
 chars	DCD		'a', 'B', '5', 'q', '0', 'O', '1', 's', 'b', 'i', 'G'
-caps	FILL		4
-
-
+size		DCD		44
+caps		FILL		4
+		
 main
 		mov		r1, #0		; counter for end of array
 		adr		r2, chars		; get address for chars
@@ -38,4 +38,4 @@ capt
 		mov		r4, #1
 		add		r5, r5, r4	; increment counter
 		str		r5, [r0]		; put updated counter back in memory
-		b		back	
+		b		back
